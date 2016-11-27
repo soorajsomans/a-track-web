@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/studymaterials','StudyMaterialsController@index');
+Route::get('/studymaterials/{sub}','StudyMaterialsController@subjects');
+Route::post('uploadStud','StudyMaterialsController@uploadPDF');
+Route::get('showPDF/{id}','StudyMaterialsController@showPDF');

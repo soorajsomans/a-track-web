@@ -259,7 +259,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-diamond"></i>
               <div class="nim-service-detail">
                 <h4>Current Affairs</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>Events of political or social interest and importance happening in the world at the present time.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -291,7 +291,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-rocket"></i>
               <div class="nim-service-detail">
                 <h4>Science and Technology</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>In science studies, science, technology and society  is the study of how social, political, and cultural values affect scientific research and technological innovation, and how these, in turn, affect society, politics and culture.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -399,7 +399,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
       <div class="col-md-4">
         <p class="footer-links"><a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></p>
       </div>
-      <div class="col-md-4"> <small>&copy; 2015 Nim. All rights reserved.</small></div>
+      <div class="col-md-4"> <small>&copy; 2016 All rights reserved.</small></div>
       <div class="col-md-4">
         <!--social-->
 
