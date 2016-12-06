@@ -22,3 +22,5 @@ Route::get('/studymaterials','StudyMaterialsController@index');
 Route::get('/studymaterials/{sub}','StudyMaterialsController@subjects');
 Route::post('uploadStud','StudyMaterialsController@uploadPDF');
 Route::get('showPDF/{id}','StudyMaterialsController@showPDF');
+Route::resource('/exam','ExamController');
+Route::get('/exm/{id}','ExamController@exam');
