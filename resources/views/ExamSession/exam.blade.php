@@ -6,8 +6,9 @@
     <div class="row">
         <div class="col-md-12 col-md-offset-0">
             <div class="panel panel-success">
-                <div class="panel-heading">Hitory</div>
+                <div class="panel-heading">Exam</div>
                 <div class="panel-body">
+                <form action="submit" method="POST">
                     @foreach($questions as $q)
                     <h1>{{$q->question}}</h1>
                     <div class="radio">
@@ -23,6 +24,8 @@
                             <label><input type="radio" name="{{$q->id}}" value="4">{{$q->opt4}}</label>
                         </div>
                 @endforeach
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </form>
                 </div>
             </div>
         </div>

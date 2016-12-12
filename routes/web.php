@@ -24,3 +24,6 @@ Route::post('uploadStud','StudyMaterialsController@uploadPDF');
 Route::get('showPDF/{id}','StudyMaterialsController@showPDF');
 Route::resource('/exam','ExamController');
 Route::get('/exm/{id}','ExamController@exam');
+Route::post('submit','ExamController@validation');
+Route::post('uploadExcel','ExamController@uploadExcel');
+Route::get('examUpload','ExamController@add');
