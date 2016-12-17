@@ -20,6 +20,28 @@ class StudyMaterialsController extends Controller
         $sub="History";
       $subject=StudyMaterial::where('subject','History')->get();
     }
+    else if($sub ==2){
+      $sub="Polity";
+    $subject=StudyMaterial::where('subject','Polity')->get();
+    }
+    else if($sub ==3){
+      $sub="Geography";
+    $subject=StudyMaterial::where('subject','Geography')->get();
+    }
+    else if($sub ==4){
+      $sub="Economics";
+    $subject=StudyMaterial::where('subject','Economics')->get();
+    }
+    else if($sub ==5){
+      $sub="Science And Technology";
+    $subject=StudyMaterial::where('subject','Science And Technology')->get();
+    }
+    else if($sub ==6){
+    return url('www.amritaiias.com');
+    }
+
+
+
     return view ('StudyMaterials.show')->withSubject($subject)->withSub($sub);
     }
     public function showPDF($id){

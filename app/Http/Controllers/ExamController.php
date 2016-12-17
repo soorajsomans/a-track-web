@@ -115,9 +115,29 @@ class ExamController extends Controller
     public function add(){
         return view('ExamSession.add');
     }
-
-    public function validation(){
-
+    function validation($id,$ans){
+        $ques=Exam::find($id);
+        if($ques->ans == $ans){
+            return 1;
+        }
+        else{
+             return 0;
+         }
+    }
+    public function score(Request $request){
+        $score=0;
+        $total=0;
+        $answers = Input::get('ques');
+        $ids = Input::get('ids');
+            foreach($answers as $ans){
+                $an = Exam::find($ids[$total]);
+                if($an->ans == $ans){
+                    $score++;
+                }
+                $total++;
+        }
+        echo $score;
+        return view('ExamSession.score')->withScore($score)->withTotal($total);
     }
 
     /**

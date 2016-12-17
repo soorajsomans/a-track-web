@@ -27,3 +27,8 @@ Route::get('/exm/{id}','ExamController@exam');
 Route::post('submit','ExamController@validation');
 Route::post('uploadExcel','ExamController@uploadExcel');
 Route::get('examUpload','ExamController@add');
+Route::post('uploadMag','MagazineController@uploadPDF');
+Route::get('/magUpload','MagazineController@index');
+Route::get('viewPDF/{id}','MagazineController@showPDF');
+Route::get('magazines','MagazineController@viewPDF');
+Route::post('/exm/submitScore','ExamController@score');

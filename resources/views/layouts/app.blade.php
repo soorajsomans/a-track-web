@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="/js/app.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +29,6 @@
         window.Laravel = @php echo json_encode([
             'csrfToken' => csrf_token(),]); @endphp
     </script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
@@ -44,9 +54,7 @@
             <li><a href="/" class="page-scroll">Home</a></li>
             <li><a href="/home" class="page-scroll">Dashboard</a></li>
 
-            <li><a href="#three" class="page-scroll">Team</a></li>
 
-             <li><a href="#seven" class="page-scroll">Services</a></li>
              @if(!Auth::guest())
             <li><a href="{{ url('/logout') }}"
                 onclick="event.preventDefault();
@@ -68,6 +76,5 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
 </body>
 </html>
