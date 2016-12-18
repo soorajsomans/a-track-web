@@ -123,6 +123,11 @@ class ExamController extends Controller
         $total=0;
         $answers = Input::get('ques');
         $ids = Input::get('ids');
+        $i=0;
+        foreach($ids as $id){
+        $subs[$i]=Exam::where('id',$id)->first();
+        $i++;
+        }
         $subject = Input::get('subject');
             foreach($answers as $ans){
                 $an = Exam::find($ids[$total]);
@@ -145,7 +150,8 @@ class ExamController extends Controller
         $result->mark=$score;
         $result->total=$total;
         $result->save();
-        return view('ExamSession.score')->withScore($score)->withTotal($total);
+
+        return view('ExamSession.score')->withScore($score)->withTotal($total)->withSubs($subs)->withResult($result);
     }
 
     /**

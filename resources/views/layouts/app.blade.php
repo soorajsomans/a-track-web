@@ -51,9 +51,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/" class="page-scroll">Home</a></li>
+            <li><a href="/home" class="page-scroll">Home</a></li>
+            @if(Auth::User()->role>0)
+            <li><a href="/admin" class="page-scroll">Admin Dashboard</a></li>
+        @else
             <li><a href="/home" class="page-scroll">Dashboard</a></li>
-
+            @endif
 
              @if(!Auth::guest())
             <li><a href="{{ url('/logout') }}"

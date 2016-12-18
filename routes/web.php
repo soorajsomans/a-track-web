@@ -36,3 +36,4 @@ Route::post('/exm/submitScore','ExamController@score');
 Route::get('/admin/users','AdminController@showUsers');
 Route::get('/admin/results','AdminController@showResults');
 Route::post('/admin/removeUser/{id}','AdminController@destroy');
+Route::post('/admin/removeResult/{id}','AdminController@remove');

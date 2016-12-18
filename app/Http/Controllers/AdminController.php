@@ -47,7 +47,7 @@ class AdminController extends Controller
      */
     public function showResults()
     {
-        $results =Result::paginate(10);
+        $results =Result::paginate(9);
         return view('Admin.results')->withResults($results);
     }
 
@@ -83,6 +83,19 @@ class AdminController extends Controller
     public function update(Request $request, $id)
     {
         //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function remove($id)
+    {
+        $res = Result::find($id);
+        $res->delete();
+        return redirect()->back();
     }
 
     /**
