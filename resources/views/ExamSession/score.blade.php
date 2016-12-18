@@ -3,7 +3,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-
             <div class="panel panel-default">
                 <div class="panel-heading">Score Card</div>
                 <div class="panel-body">
@@ -28,9 +27,7 @@
             <div class="panel panel-success">
                 <div class="panel-heading">Answers and Description</div>
                 <div class="panel-body">
-
                     @foreach($subs as $ans)
-
                         <h2>Question: {{$ans->question}}</h2>
                         <h4> Answer: @if($ans->ans ==1)
                             {{$ans->opt1}}
