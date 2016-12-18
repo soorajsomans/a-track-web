@@ -18,8 +18,8 @@
                              <p>Score : {{$result->mark}}</p>
                              <p>Total : {{$result->total}}</p>
                              <p>Date : <b>{{$result->created_at->format('d.m.Y')}}</b></p>
-                         </div>                             <a href="{{url('/exam')}}" class="btn btn-primary">Take Another Exam</a>
-</div></center>
+                         </div><a href="{{url('/exam')}}" class="btn btn-primary">Take Another Exam</a>
+                     </div></center>
                      </div>
                  </div>
                  </center>
