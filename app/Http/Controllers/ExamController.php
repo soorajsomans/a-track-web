@@ -7,6 +7,8 @@ use App\Exam;
 use Session;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Input;
+use App\Result;
+use Auth;
 
 class ExamController extends Controller
 {
@@ -73,7 +75,7 @@ class ExamController extends Controller
             case 4:$questions=Exam::where('subject','Geography')->get();break;
             case 5:$questions=Exam::inRandomOrder()->get();break;
         }
-        return view('ExamSession.exam')->withQuestions($questions);
+        return view('ExamSession.exam')->withQuestions($questions)->withId($id);
     }
 
     /**
@@ -115,20 +117,18 @@ class ExamController extends Controller
     public function add(){
         return view('ExamSession.add');
     }
-    function validation($id,$ans){
-        $ques=Exam::find($id);
-        if($ques->ans == $ans){
-            return 1;
-        }
-        else{
-             return 0;
-         }
-    }
+
     public function score(Request $request){
         $score=0;
         $total=0;
         $answers = Input::get('ques');
         $ids = Input::get('ids');
+        $i=0;
+        foreach($ids as $id){
+        $subs[$i]=Exam::where('id',$id)->first();
+        $i++;
+        }
+        $subject = Input::get('subject');
             foreach($answers as $ans){
                 $an = Exam::find($ids[$total]);
                 if($an->ans == $ans){
@@ -136,8 +136,22 @@ class ExamController extends Controller
                 }
                 $total++;
         }
-        echo $score;
-        return view('ExamSession.score')->withScore($score)->withTotal($total);
+        $sub= null;
+        switch ($subject){
+            case 1:$sub="History";break;
+            case 2:$sub="Economics";break;
+            case 3:$sub="Polity";break;
+            case 4:$sub="Geography";break;
+            case 5:$sub="Mixed";break;
+        }
+        $result = new Result();
+        $result->user_id = Auth::User()->id;
+        $result->subject =$sub;
+        $result->mark=$score;
+        $result->total=$total;
+        $result->save();
+
+        return view('ExamSession.score')->withScore($score)->withTotal($total)->withSubs($subs)->withResult($result);
     }
 
     /**

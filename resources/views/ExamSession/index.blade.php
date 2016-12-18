@@ -72,9 +72,9 @@
                                 <div class="thumbnail">
                                     <img src="images/bak1.jpg" alt="img">
                                     <div class="caption">
-                                        <h3>Science and Technology</h3>
-                                        <p>...</p>
-                                        <p><a href="{{url('/exm/1')}}" class="btn btn-warning">
+                                        <h3>Mock test</h3>
+                                        <p>Take a Mixed Exam</p>
+                                        <p><a href="{{url('/exm/5')}}" class="btn btn-warning">
                                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
                                         </a></p>
                                     </div>
