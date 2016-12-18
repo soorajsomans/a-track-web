@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Input;
 
 class MagazineController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
   public function uploadPDF(Request $request){
     $pdf = new Magazine();
     $title=$request->get('month');

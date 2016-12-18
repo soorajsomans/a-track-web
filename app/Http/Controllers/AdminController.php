@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Result;
 
 class AdminController extends Controller
 {
 
     public function __construct()
     {
+        $this->middleware('auth');
         $this->middleware('admin');
+
     }
     /**
      * Display a listing of the resource.
@@ -21,6 +25,10 @@ class AdminController extends Controller
         return view('Admin.index');
     }
 
+    public function showUsers(){
+        $users = User::paginate(15);
+        return view('Admin.users')->withUsers($users);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -37,9 +45,10 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function showResults()
     {
-        //
+        $results =Result::paginate(10);
+        return view('Admin.results')->withResults($results);
     }
 
     /**
@@ -84,6 +93,8 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->back();
     }
 }
