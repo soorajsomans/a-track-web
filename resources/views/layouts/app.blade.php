@@ -52,12 +52,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/home" class="page-scroll">Home</a></li>
+            @if(Auth::check())
             @if(Auth::User()->role>0)
             <li><a href="/admin" class="page-scroll">Admin Dashboard</a></li>
-        @else
+            @else
             <li><a href="/home" class="page-scroll">Dashboard</a></li>
             @endif
-
+        @endif
              @if(!Auth::guest())
             <li><a href="{{ url('/logout') }}"
                 onclick="event.preventDefault();
