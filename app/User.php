@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Result;
+use App\Feedback;
 
 class User extends Authenticatable
 {
@@ -30,5 +31,8 @@ class User extends Authenticatable
 
     public function Result(){
         return $this->hasMany('App\Result');
+    }
+    public function Feedback(){
+        return $this->hasMany('App\Feedback');
     }
 }

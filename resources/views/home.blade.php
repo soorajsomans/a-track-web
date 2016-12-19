@@ -5,12 +5,12 @@
     <div class="row">
         <div class="col-sm-16 col-md-0">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading" style="background-color:light-blue;"><h3>AMRITA TRAINING REFERENCE AND COACHING KIT</div>
                 <div class="panel-body">
 
                   <div class="col-sm-6 col-md-4">
                       <div class="thumbnail">
-                          <img src="images/.jpeg" alt="img">
+                          <img src="images/exam.jpg" alt="img">
                           <div class="caption">
                               <h3>Exam Session</h3>
                               <p>...</p>
@@ -23,7 +23,7 @@
 
                   <div class="col-sm-6 col-md-4">
                       <div class="thumbnail">
-                          <img src="images/.jpeg" alt="img">
+                          <img src="images/study.png" alt="img">
                           <div class="caption">
                               <h3>Study Material</h3>
                               <p>...</p>
@@ -36,9 +36,9 @@
 
                   <div class="col-sm-6 col-md-4">
                       <div class="thumbnail">
-                          <img src="images/.jpeg" alt="img">
+                          <img src="images/magazine.jpg" alt="img">
                           <div class="caption">
-                              <h3>Magazine</h3>
+                              <h3>Magazines</h3>
                               <p>...</p>
                               <p><a href="{{url('/magazines')}}" class="btn btn-primary btn-lg">
                                 <span class="glyphicon glyphicon-star" aria-hidden="true" ></span>Magazine
@@ -48,9 +48,6 @@
                   </div>
 
 
-                  <button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> View Attended Test
-                  </button>
 
                 </div>
             </div>

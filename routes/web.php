@@ -37,3 +37,8 @@ Route::get('/admin/users','AdminController@showUsers');
 Route::get('/admin/results','AdminController@showResults');
 Route::post('/admin/removeUser/{id}','AdminController@destroy');
 Route::post('/admin/removeResult/{id}','AdminController@remove');
+Route::get('admin/feedback','FeedbackController@index');
+Route::post('exm/postFeedback','FeedbackController@post');
+Route::post('admin/postreply/{id}','FeedbackController@reply');
+Route::post('admin/deletefeedback/{id}','FeedbackController@destroy');
+Route::get('feedback','ExamController@feedback');

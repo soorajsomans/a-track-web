@@ -184,7 +184,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
           </div> <!-- team-member -->
 
           <div class="col-sm-3">
-            <img src="images/team-2.jpg" alt="team-member" class="img-responsive">
+            <img src="images/team-1.jpg" alt="team-member" class="img-responsive">
             <h4>HariKrishnan V</h4>
             <h5>Web Designer</h5>
           <!--  <p>Hey, I’m Meera Deo residing in this beautiful world. I create websites and mobile...</p>-->
@@ -197,7 +197,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
           </div> <!-- team-member -->
 
           <div class="col-sm-3">
-            <img src="images/team-3.jpg" alt="team-member" class="img-responsive">
+            <img src="images/team-1.jpg" alt="team-member" class="img-responsive">
             <h4>Vibin V V</h4>
             <h5>Manager</h5>
       <!--      <p>Hey, I’m Ramkumar Deo residing in this beautiful world. I create websites and mobile...</p>-->
@@ -210,7 +210,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
           </div> <!-- team-member -->
 
           <div class="col-sm-3">
-            <img src="images/team-4.jpg" alt="team-member" class="img-responsive">
+            <img src="images/team-1.jpg" alt="team-member" class="img-responsive">
             <h4>Deekshit D</h4>
             <h5>Graphic Designer</h5>
         <!--    <p>Hey, I’m Antony Kovalsky residing in this beautiful world. I create websites and mobile...</p>-->
@@ -223,12 +223,11 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
           </div> <!-- team-member -->
         </div> <!-- end row -->
 
-        <div class="row margin-top">
+  <!--      <div class="row margin-top">
           <div class="col-md-12 text-center">
             <a href="#" class="btn btn-custom theme_background_color ">We are Hiring</a>
-          </div> <!-- /col -->
-        </div> <!-- /row -->
-
+          </div>
+        </div>  -->
       </div>
   </section>
 

@@ -41,6 +41,13 @@
                         <h6>Explanation: {{$ans->explanation}}</h6>
                         <hr>
                     @endforeach
+                    <hr>
+                    <form method="POST" action="postFeedback">
+                      {{csrf_field()}}
+                      <label>FeedBack</label>
+                    <textarea style="width: 719px; height: 198px;" name="feedback" width="100px"></textarea>
+                      <input type="submit" class="btn btn-success btn-block" value="Submit" style="font-size: 20px;">
+                    </form>
                 </div>
             </div>
         </div>

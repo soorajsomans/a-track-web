@@ -8,66 +8,80 @@
                 <div class="panel-heading">Select Subject</div>
                 <div class="panel-body">
                     <center>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="images/bak1.jpg" alt="img">
-                                    <div class="caption">
-                                        <h3>History</h3>
-                                        <p>History</p>
-                                        <p><a href="{{url('/exm/1')}}" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
-                                        </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="images/bak1.jpg" alt="img">
-                                    <div class="caption">
-                                        <h3>Geography</h3>
-                                        <p>...</p>
-                                        <p><a href="{{url('/exm/4')}}" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
-                                        </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="images/bak1.jpg" alt="img">
-                                    <div class="caption">
-                                        <h3>Polity</h3>
-                                        <p>...</p>
-                                        <p><a href="{{url('/exm/3')}}" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
-                                        </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="images/bak1.jpg" alt="img">
-                                    <div class="caption">
-                                        <h3>Current Affairs</h3>
-                                        <p>...</p>
-                                        <p><a href="{{url('/exm/1')}}" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
-                                        </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="images/bak1.jpg" alt="img">
-                                    <div class="caption">
-                                        <h3>Economics</h3>
-                                        <p>Economics is a bullshit.</p>
-                                        <p><a href="{{url('/exm/2')}}" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
-                                        </a></p>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/history.jpeg" alt="img">
+                              <div class="caption">
+                                  <h3>History</h3>
+                                  <p>History</p>
+                                  <p><a href="{{url('/exm/1')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>History
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/geography.jpeg" alt="img">
+                              <div class="caption">
+                                  <h3>Geography</h3>
+                                  <p>...</p>
+                                  <p><a href="{{url('/exm/4')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/politics.jpg" alt="img">
+                              <div class="caption">
+                                  <h3>Polity</h3>
+                                  <p>...</p>
+                                  <p><a href="{{url('/exm/3')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/current-affairs.jpg" alt="img">
+                              <div class="caption">
+                                  <h3>Current Affairs</h3>
+                                  <p>...</p>
+                                  <p><a href="{{url('/exm/6')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/ecnomics.jpg" alt="img">
+                              <div class="caption">
+                                  <h3>Economics</h3>
+                                  <p>Economics is a bullshit.</p>
+                                  <p><a href="{{url('/exm/2')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/science.jpg" alt="img">
+                              <div class="caption">
+                                  <h3>Science and Technology</h3>
+                                  <p>...</p>
+                                  <p><a href="{{url('/exm/7')}}" class="btn btn-warning">
+                                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Take Exam
+                                  </a></p>
+                              </div>
+                          </div>
+                      </div>
+                    </center>
+                      <center>
                             <div class="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bak1.jpg" alt="img">
@@ -80,8 +94,9 @@
                                     </div>
                                 </div>
                             </div>
+                          </center>
                             @if(Auth::User()->role>0)
-
+                            <center>
                                 <a href="{{url('/examUpload')}}" class="btn btn-success">
                                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Add Exam questions
                                 </a>

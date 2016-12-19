@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Exam;
+use App\Feedback;
 use Session;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Input;
@@ -32,10 +33,10 @@ class ExamController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+     public function feedback(){
+       $feedbacks = Feedback::where('id',Auth::User()->id)->orderBy('id','desc')->get();
+       return view('ExamSession.feedback')->withFeedbacks($feedbacks);
+     }
 
     /**
      * Store a newly created resource in storage.
@@ -74,6 +75,8 @@ class ExamController extends Controller
             case 3:$questions=Exam::where('subject','Polity')->get();break;
             case 4:$questions=Exam::where('subject','Geography')->get();break;
             case 5:$questions=Exam::inRandomOrder()->get();break;
+            case 6:$questions=Exam::where('subject','CurrentAffairs')->get();break;
+            case 7:$questions=Exam::where('subject','ScienceandTechnology')->get();break;
         }
         return view('ExamSession.exam')->withQuestions($questions)->withId($id);
     }

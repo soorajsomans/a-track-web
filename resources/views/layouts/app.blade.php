@@ -60,6 +60,7 @@
             @endif
         @endif
              @if(!Auth::guest())
+               <li><a href="/feedback" class="page-scroll">FeedBack</a></li>
             <li><a href="{{ url('/logout') }}"
                 onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();">
