@@ -9,7 +9,15 @@
                     @if(Auth::User()->role>0)
                   <form enctype="multipart/form-data" method="POST" action="uploadStud">
                     <label>Subject:</label>
-                    <input type="text" name="subject">
+
+
+                    <select name="subject">
+                      <option value="History">History</option>
+                        <option value="Geography">Geography</option>
+                        <option value="Polity">Polity</option>
+                        <option value="Economics">Economics</option>
+                        <option value="ScienceandTechnology">ScienceandTechnology</option>
+                      </select>
 
                     <br>
                     <label>Chapter/Description:</label>

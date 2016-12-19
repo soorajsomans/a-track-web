@@ -146,6 +146,8 @@ class ExamController extends Controller
             case 3:$sub="Polity";break;
             case 4:$sub="Geography";break;
             case 5:$sub="Mixed";break;
+            case 6:$sub="CurrentAffairs";break;
+            case 7:$sub="ScienceandTechnology";break;
         }
         $result = new Result();
         $result->user_id = Auth::User()->id;
