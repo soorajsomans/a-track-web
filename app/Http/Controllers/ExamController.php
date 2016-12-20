@@ -34,7 +34,7 @@ class ExamController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function feedback(){
-       $feedbacks = Feedback::where('id',Auth::User()->id)->orderBy('id','desc')->get();
+       $feedbacks = Feedback::where('user_id',Auth::User()->id)->orderBy('id','desc')->get();
        return view('ExamSession.feedback')->withFeedbacks($feedbacks);
      }
 
@@ -70,13 +70,13 @@ class ExamController extends Controller
     {
         $questions = null;
         switch ($id){
-            case 1:$questions=Exam::where('subject','History')->get();break;
-            case 2:$questions=Exam::where('subject','Economics')->get();break;
-            case 3:$questions=Exam::where('subject','Polity')->get();break;
-            case 4:$questions=Exam::where('subject','Geography')->get();break;
+            case 1:$questions=Exam::where('subject','History')->inRandomOrder()->paginate(100);break;
+            case 2:$questions=Exam::where('subject','Economics')->inRandomOrder()->paginate(100);break;
+            case 3:$questions=Exam::where('subject','Polity')->inRandomOrder()->paginate(100);break;
+            case 4:$questions=Exam::where('subject','Geography')->inRandomOrder()->paginate(100);break;
             case 5:$questions=Exam::inRandomOrder()->get();break;
-            case 6:$questions=Exam::where('subject','CurrentAffairs')->get();break;
-            case 7:$questions=Exam::where('subject','ScienceandTechnology')->get();break;
+            case 6:$questions=Exam::where('subject','CurrentAffairs')->inRandomOrder()->paginate(100);break;
+            case 7:$questions=Exam::where('subject','ScienceandTechnology')->inRandomOrder()->paginate(100);break;
         }
         return view('ExamSession.exam')->withQuestions($questions)->withId($id);
     }
@@ -108,8 +108,6 @@ class ExamController extends Controller
                  'opt4' => $value->opt4,
                  'explanation' => $value->explanation,
                  'ans' => $value->ans
-
-
              ]);
              }
                 return redirect()->back();
@@ -127,6 +125,9 @@ class ExamController extends Controller
         $answers = Input::get('ques');
         $ids = Input::get('ids');
         $i=0;
+        if($answers == NULL){
+          return redirect()->back();
+        }
         foreach($ids as $id){
         $subs[$i]=Exam::where('id',$id)->first();
         $i++;

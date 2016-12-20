@@ -166,7 +166,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
        <div class="row text-center">
           <div class="col-md-12">
               <h3 class="title">Creative <span class="themecolor">Team</span></h3>
-            <p class="a-slog">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty</p>
+
           </div>
         </div>
           <div class="row text-center">
@@ -247,7 +247,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
         <div class="row text-center">
           <div class="col-md-12">
               <h3 class="title">We Are <span class="themecolor">Offering</span></h3>
-            <p class="a-slog">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty</p>
+          
           </div> <!-- /col -->
         </div> <!-- /row -->
         <div class="gap"></div>

@@ -42,3 +42,4 @@ Route::post('exm/postFeedback','FeedbackController@post');
 Route::post('admin/postreply/{id}','FeedbackController@reply');
 Route::post('admin/deletefeedback/{id}','FeedbackController@destroy');
 Route::get('feedback','ExamController@feedback');
+Route::get('admin/showresults/{id}','AdminController@showuserresult');

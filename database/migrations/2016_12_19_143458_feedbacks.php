@@ -20,6 +20,7 @@ class Feedbacks extends Migration
           ->references('id')->on('users')
           ->onDelete('cascade')->onUpdate('cascade');
           $table->longtext('feedback');
+          $table->string('subject');
           $table->longtext('reply');
           $table->timestamps();
       });

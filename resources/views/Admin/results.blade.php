@@ -16,23 +16,16 @@
                             <center><h1><span class="glyphicon glyphicon-user"></span></h1>
                             <div class="caption">
                                 <div class="panel panel-danger">
-                                <h3 style="color:#FF5722;">{{$result->user->name}}</h3>
-                                <p>Subject : {{$result->subject}}</p>
-                                <p>Score : {{$result->mark}}</p>
-                                <p>Total : {{$result->total}}</p>
-                                <p>Date : <b>{{$result->created_at->format('d.m.Y')}}</b></p>
+                                <h3 style="color:#FF5722;">{{$result->name}}</h3>
+                                <p>USER ID : {{$result->id}}</p>
+                                <a href="showresults/{{$result->id}}" class="btn btn-success">Show Exam Results</a><br><br>
                             </div></div></center>
                         </div>
                     </div>
                 @endforeach
                 </div>
-                {{$results->links()}}
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 @endsection

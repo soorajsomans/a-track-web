@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Result;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -47,7 +48,14 @@ class AdminController extends Controller
      */
     public function showResults()
     {
-        $results =Result::paginate(9);
+
+            $results=  User::whereExists(function ($query) {
+                $query->select(DB::raw('*'))
+                      ->from('results')
+                      ->whereRaw('results.user_id = users.id');
+            })
+            ->get();
+
         return view('Admin.results')->withResults($results);
     }
 
@@ -80,9 +88,10 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function showuserresult($id)
     {
-        //
+        $res = Result::where('user_id',$id)->get();
+        return view('Admin.userresult')->withRes($res);
     }
 
     /**

@@ -45,6 +45,7 @@
                     <form method="POST" action="postFeedback">
                       {{csrf_field()}}
                       <label>FeedBack</label>
+                      <input type="hidden" name="sub" value="{{$result->subject}}"  >
                     <textarea style="width: 719px; height: 198px;" name="feedback" width="100px"></textarea>
                       <input type="submit" class="btn btn-success btn-block" value="Submit" style="font-size: 20px;">
                     </form>

@@ -43,7 +43,7 @@
                    <form method="POST" action = "/admin/deletefeedback/{{$feedback->id}}">
                        <input type="hidden" name="_token" value="{{csrf_token()}}">
                    <input type="submit" class="close" value="&times;"></form>
-                   <h4>{{$feedback->user->name}}</h4>
+                   <h4>{{$feedback->user->name}} for {{$feedback->subject}} at {{$feedback->created_at->format('d/m/Y')}}</h4>
                    <p>{{$feedback->feedback}}</p>
                    <form method="POST" action="postreply/{{$feedback->id}}">
                      {{csrf_field()}}

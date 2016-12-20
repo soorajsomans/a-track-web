@@ -41,7 +41,7 @@
                  @foreach($feedbacks as $feedback)
                  <div class="bs-callout bs-callout-info">
                    <h4>{{$feedback->feedback}}</h4>
-                   <p>{{$feedback->reply}}</p>
+                   <p>Reply: {{$feedback->reply}}</p>
                  </div>
                  @endforeach
                </div>
