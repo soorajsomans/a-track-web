@@ -100,16 +100,10 @@
    </section>
 
  <!-- [/MAIN-HEADING]
- ============================================================================================================================-->
+ ============================================================================================================================ -->
 
+ <!-- [ABOUT US] -->
 
- <!-- [ABOUT US]
- ==========================Our Inspiration : MATA AMRITANANDAMAYI (AMMA)
-Spiritual leader, humanitarian and visionary Sri Mata Amritanandamayi Devi (known to millions simply as ‘Amma’), is a servant of the world community. Through her inspiring life of love, inner strength and self-sacrifice, Amma has inspired people all over the planet to strive to make more and more space in the hearts for others and to dedicate free time to social service. She is the guiding light for the Academy.
-
-Amma converted her own ancestral home into an ashram which is today one of the largest spiritual and humanitarian organisations in India, the Mata Amritanandamayi Math. Amma is the Chancellor of Amrita University, one of the leading private Universities in India today. MA Math has built more than 80,000 homes for the homeless throughout India, provides scholarships for more than 50,000 impoverished children, and has helped more than one lakh poverty-stricken women form self-help groups, and much more.
-
-At the center of Amma’s life is her darshan: the tender, caring embrace that has been sought out by millions. It is in this intimate manner—a heartfelt hug—that Mata Amritanandamayi meets one and all, listens to their problems and gives them the inspiration and knowledge to uplift themselves and, ultimately, others.==================================================================================================-->
  <section class="aboutus white-background black" id="one">
      <div class="container">
          <div class="row">
@@ -247,7 +241,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
         <div class="row text-center">
           <div class="col-md-12">
               <h3 class="title">We Are <span class="themecolor">Offering</span></h3>
-          
+
           </div> <!-- /col -->
         </div> <!-- /row -->
         <div class="gap"></div>
@@ -268,7 +262,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-tablet"></i>
               <div class="nim-service-detail">
                 <h4>Magazine</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>A periodical publication containing articles and illustrations, often on a ias subject or aimed at a general readership.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -278,7 +272,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-magic"></i>
               <div class="nim-service-detail">
                 <h4>General Studies</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>information on many different subjects that you collect gradually, from reading, television, etc., rather than detailed information on subjects that you have studied formally.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -300,7 +294,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-map-marker"></i>
               <div class="nim-service-detail">
                 <h4>Geography</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>Geography is a field of science devoted to the study of the lands, the features, the inhabitants, and the phenomena of Earth.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -310,7 +304,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-paypal"></i>
               <div class="nim-service-detail">
                 <h4>Polity</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>A polity is any kind of political entity. It is a group of people who are collectively united by a self-reflected cohesive force such as identity, who have a capacity to mobilise resources, and are organised by some form of institutionalised hierarchy</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -322,7 +316,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
               <i class="fa fa-bar-chart-o"></i>
               <div class="nim-service-detail">
                 <h4>Economy</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>An entire network of producers, distributors, and consumers of goods and services in a local, regional, or national community.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -341,8 +335,8 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
             <div class="nim-service margin-bottom">
               <i class="fa fa-pencil-square"></i>
               <div class="nim-service-detail">
-                <h4>Others</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <h4>Feedback</h4>
+                <p>information about reactions to a product, a person's performance of a task, etc. which is used as a basis for improvement.</p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->
@@ -363,7 +357,7 @@ At the center of Amma’s life is her darshan: the tender, caring embrace that h
   <div class="container">
     <div class="col-md-12">
         <h3 class="title">Subscribe to our <span class="themecolor"> News letter</span></h3>
-            <p class="lead">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty</p>
+
     </div>
     <div class="row">
         <div class="col-md-3 col-sm-3"></div>

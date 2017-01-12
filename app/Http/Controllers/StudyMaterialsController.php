@@ -58,7 +58,7 @@ class StudyMaterialsController extends Controller
       if (Input::file('files')->isValid()) {
            $destinationPath = 'files'; // upload path
            $extension = Input::file('files')->getClientOriginalExtension(); // getting file extension
-           $fileName = uniqid().'.'.$extension; // renaming
+           $fileName = uniqid().'.'.$extension; // renameing
            Input::file('files')->move($destinationPath, $fileName);
            $pdf->subject = $title;
            $pdf->chapter=$request->get('chapter');

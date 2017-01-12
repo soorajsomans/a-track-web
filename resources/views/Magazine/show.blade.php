@@ -5,10 +5,11 @@
         <div class="col-md-8 col-md-offset-2">
 
             <div class="panel panel-default">
-                <div class="panel-heading">Magazines</div>
+                <div class="panel-heading">Mgazines</div>
                 <div class="panel-body">
-                @if (Auth::check())
-                  @if(Auth::user()->role > 0)
+
+
+                  @if(Auth::User()->role>0)
                 <form enctype="multipart/form-data" method="POST" action="uploadMag">
                   <label>Month</label>
                   <select name="month">
@@ -27,7 +28,7 @@
                 </form>
                 <br>
                   @endif
-              @endif
+
                   @foreach($mag as $mag)
                   <a href="{{url('/viewPDF',$mag->id)}}" class="btn btn-warning btn-lg">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>{{$mag->month}}

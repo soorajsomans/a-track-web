@@ -9,23 +9,23 @@
                     @if(Auth::User()->role>0)
                   <form enctype="multipart/form-data" method="POST" action="uploadMag">
                     <label>Month</label>
-                    <select name="month">
+                   <select name="month">
                       <option value="January">January</option>
                       <option value="February">February</option>
                       <option value="March">March</option>
                       <option value="April">April</option>
-                      <option value="April">May</option>
-                      <option value="April">June</option>
-                      <option value="April">July</option>
-                      <option value="April">Augest</option>
-                      <option value="April">September</option>
-                      <option value="April">October</option>
-                      <option value="April">November</option>
-                      <option value="April">December</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">Augest</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
 
                     </select>
-
                     <br>
+
                     <label>Version:</label>
                     <input type="text" name="version">
                     <input type="file" name="files" id="file">
